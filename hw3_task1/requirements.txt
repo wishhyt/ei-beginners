@@ -1,0 +1,5 @@
+pybullet
+numpy
+google-generativeai
+dataclasses; python_version < '3.7'
+typing-extensions; python_version < '3.8'
