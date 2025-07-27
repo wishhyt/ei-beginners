@@ -1,9 +1,3 @@
-"""
-PyBullet高级功能全面测试示例
-此代码演示了PyBullet的主要功能，包括基础仿真、关节控制、碰撞检测、
-逆运动学、约束、相机渲染、可变形体等高级特性
-"""
-
 import pybullet as p
 import pybullet_data
 import time
