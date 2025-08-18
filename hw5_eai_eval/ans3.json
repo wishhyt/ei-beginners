@@ -1,0 +1,8 @@
+{
+    "identifier": "assembling_gift_baskets_demo_0001",
+    "llm_output": [
+      {"action": "GRASP", "object": "basket_0"},
+      {"action": "PLACE_INSIDE", "object": "cookie_0"}
+    ]
+  }
+  
