@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ei-beginners"
+version = "0.1.0"
+description = "Learning-preserving embodied intelligence project with planning, execution, evaluation, and RL baselines"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "EI Beginners" }]
+dependencies = [
+  "numpy>=1.24",
+  "gymnasium>=0.29",
+  "pybullet>=3.2",
+]
+
+[project.optional-dependencies]
+rl = ["stable-baselines3>=2.3.0"]
+llm = ["google-generativeai>=0.8.0"]
+dev = [
+  "black>=24.8.0",
+  "ruff>=0.6.5",
+  "pytest>=8.3.0",
+  "mypy>=1.11.0",
+]
+
+[project.scripts]
+ei = "ei_beginners.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["learning_journey"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+exclude = "learning_journey"

@@ -1,7 +1,0 @@
-{
-    "identifier": "assembling_gift_baskets_demo_0001",
-    "llm_prompt": "Task: Put a candle and a cookie into basket_0. \
-  Scene objects: [basket_0, candle_0, cookie_0]. \
-  Output ONLY a JSON array of steps, each step is {\"action\": <ACTION_NAME>, \"object\": <OBJECT_ID>}."
-  }
-  
